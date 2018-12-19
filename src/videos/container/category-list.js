@@ -6,7 +6,7 @@ import {
 import Layout from '../components/category-list-layout';
 import Empty from '../components/empty';
 import Separator from '../../sections/components/horizontal-separator'
-import Suggestion from '../components/suggestion'
+import Category from '../components/cate-gory'
 
 export default class CategoryList extends Component{
   keyExtractor = (item) => item.id.toString();
@@ -14,7 +14,7 @@ export default class CategoryList extends Component{
   itemSeparator = () => <Separator />;
   renderItem = ({item}) => {
     return(
-      <Suggestion {...item}/>
+      <Category {...item}/>
     )
   };
   render(){
